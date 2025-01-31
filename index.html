@@ -12,7 +12,9 @@
 
     <!-- daisyUI and Tailwindcss -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
 
     <style>
         .adam-display {
@@ -26,6 +28,7 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#FFDC26',
+                        'color-primary-bg': '#F9DF8A',
                     }
                 }
             }
@@ -66,65 +69,120 @@
                     </ul>
                 </div>
                 <div class="navbar-end hidden lg:flex gap-4">
-                    
+
                     <button class="btn btn-ghost btn-circle">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                      </button>
-                      <button class="btn btn-ghost btn-circle">
-                        <div class="indicator">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                          </svg>
-                          <span class="badge badge-xs badge-primary indicator-item"></span>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
                         </div>
-                      </button>
-                      <button class="btn btn-outline btn-primary">Log in</button>
-                      <button class="btn btn-warning">Register</button>
+                    </button>
+                    <button class="btn btn-outline btn-primary">Log in</button>
+                    <button class="btn btn-warning">Register</button>
                 </div>
             </div>
         </nav>
         <!-- banner section -->
         <div class="relative md:container mx-auto grid md:grid-cols-2  mt-24">
             <!-- text item -->
-             <div class="px-2">
+            <div class="px-2">
                 <h1 class="text-4xl font-bold">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
                 <br>
-                <p class="text-gray-700">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <p class="text-gray-700">Discover a world of treats, toys, and essentials handpicked for your furry
+                    friends. Shop now and make tails wag with joy!</p>
                 <br>
                 <button class="btn btn-warning">Find a pet</button>
-             </div>
-             <!-- image section -->
-              <div class="">
+            </div>
+            <!-- image section -->
+            <div class="">
                 <img src="c1-assets/cat-big.png" alt="">
-             </div>
+            </div>
         </div>
     </header>
 
     <!-- main section -->
-    <main class="md:container mx-auto"></main>
+    <main class="md:container mx-auto">
+        <!-- cetagory section -->
+        <section class="mt-20 px-4 md:py-5">
+            <!-- text -->
+            <div>
+                <h1 class="text-2xl font-bold pb-5">Browse By Categories</h1>
+            </div>
+            <!-- card -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- card-1 -->
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/dog-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Dog</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/cat-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Cat</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/fish-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Fish</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/rabbit-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Rabbit</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/bird-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Bird</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+                <div class="card bg-red-100 w-50 h-50">
+                    <figure class="">
+                        <img class="bg-base-100 rounded-full mt-10 p-10" src="c1-assets/mouse-cartoon.png" alt="Dog" />
+                    </figure>
+                    <div class="card-body flex text-center">
+                        <h2 class="text-xl font-bold">Mouse</h2>
+                        <p class="">items 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- footer section -->
     <footer></footer>
-</body>
+    </body>
 
 </html>
